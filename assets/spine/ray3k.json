@@ -1,0 +1,79 @@
+{
+"skeleton": { "hash": "/Gsk76CnFSw", "spine": "4.1.24", "width": 1024, "height": 931.78, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "ray3k-1", "parent": "root", "length": 306.72, "rotation": 0.53, "x": 513.78, "y": 275.13 }
+],
+"slots": [
+	{ "name": "white", "bone": "root", "attachment": "white" },
+	{ "name": "white2", "bone": "root" },
+	{ "name": "ray3k-1", "bone": "ray3k-1", "attachment": "ray3k-1" },
+	{ "name": "ray3k-3", "bone": "ray3k-1", "attachment": "ray3k-2" },
+	{ "name": "ray3k-2", "bone": "ray3k-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"ray3k-1": {
+				"ray3k-1": { "x": -1.24, "y": 19.89, "rotation": -0.53, "width": 548, "height": 347 }
+			},
+			"ray3k-3": {
+				"ray3k-2": { "x": 24.03, "y": 591.51, "width": 314, "height": 127 }
+			},
+			"white": {
+				"white": {
+					"color": "000000ff",
+					"x": 512,
+					"y": 288,
+					"scaleX": 1024,
+					"scaleY": 576,
+					"width": 1,
+					"height": 1
+				}
+			}
+		}
+	}
+],
+"events": {
+	"land": { "audio": "land.mp3" }
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"ray3k-1": {
+				"translate": [
+					{ "x": -4.68, "y": 505.22 },
+					{ "time": 0.3333 },
+					{ "time": 0.405, "x": -0.43, "y": 46.01 },
+					{ "time": 0.4528, "x": 0.22, "y": -24.09 },
+					{ "time": 0.4767, "x": -0.13, "y": 14.4 },
+					{ "time": 0.5, "curve": "stepped" },
+					{ "time": 2 },
+					{ "time": 2.3333, "x": 5.94, "y": -641.97 },
+					{ "time": 2.4044, "x": 5.12, "y": -552.72 },
+					{ "time": 2.4522, "x": 5.77, "y": -622.75 },
+					{ "time": 2.4761, "x": 5.41, "y": -584.25 },
+					{ "time": 2.5, "x": 5.54, "y": -598.66, "curve": "stepped" },
+					{ "time": 3.5, "x": 5.54, "y": -598.66 },
+					{ "time": 3.8333, "x": 11.13, "y": -1202.35, "curve": "stepped" },
+					{ "time": 5, "x": 11.13, "y": -1202.35 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.2667, "name": "land" },
+			{ "time": 2.2667, "name": "land" }
+		]
+	},
+	"stand": {
+		"bones": {
+			"ray3k-1": {
+				"translate": [
+					{ "x": -4.68, "y": 505.22 }
+				]
+			}
+		}
+	}
+}
+}

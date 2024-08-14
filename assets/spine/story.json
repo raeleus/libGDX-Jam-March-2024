@@ -1,0 +1,185 @@
+{
+"skeleton": {
+	"hash": "+4fSI/QmSSs",
+	"spine": "4.1.24",
+	"y": -343.51,
+	"width": 1024,
+	"height": 1346.48,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "devil", "parent": "root", "length": 124.1, "rotation": 3.25, "x": 215.31, "y": 158.04 },
+	{ "name": "zebra", "parent": "root", "length": 166.16, "rotation": 0.97, "x": 809.45, "y": 174.93 },
+	{ "name": "devil-hand", "parent": "root", "length": 95.78, "rotation": 1.68, "x": 401.16, "y": 104.54 },
+	{ "name": "sign", "parent": "root", "length": 146.43, "rotation": -0.55, "x": 539.13, "y": 318.54 }
+],
+"slots": [
+	{ "name": "background", "bone": "root", "attachment": "background" },
+	{ "name": "white", "bone": "root", "color": "ffffff67", "attachment": "white" },
+	{ "name": "title", "bone": "root" },
+	{ "name": "sign", "bone": "sign", "attachment": "sign" },
+	{ "name": "devil", "bone": "devil", "attachment": "devil" },
+	{ "name": "zebra", "bone": "zebra", "attachment": "zebra" },
+	{ "name": "devil-hand", "bone": "devil-hand", "attachment": "devil-hand" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"background": {
+				"background": { "x": 512, "y": 288, "width": 1024, "height": 576 }
+			},
+			"devil": {
+				"devil": { "x": 0.16, "y": 2.81, "rotation": -3.25, "width": 288, "height": 272 }
+			},
+			"devil-hand": {
+				"devil-hand": { "x": 14.82, "y": 24.92, "rotation": -1.68, "width": 176, "height": 219 }
+			},
+			"sign": {
+				"sign": {
+					"x": -39.3,
+					"y": -13.05,
+					"scaleX": 0.671,
+					"scaleY": 0.671,
+					"rotation": 0.55,
+					"width": 498,
+					"height": 604
+				}
+			},
+			"title": {
+				"title": { "x": 512, "y": 288, "width": 617, "height": 364 }
+			},
+			"white": {
+				"white": {
+					"color": "000000ff",
+					"x": 512,
+					"y": 288,
+					"scaleX": 1024,
+					"scaleY": 576,
+					"width": 1,
+					"height": 1
+				}
+			},
+			"zebra": {
+				"zebra": { "x": 22.74, "y": 12.29, "rotation": -0.97, "width": 216, "height": 320 }
+			}
+		}
+	}
+],
+"events": {
+	"story": { "audio": "story.mp3" },
+	"text": {}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"devil-hand": {
+				"rgba": [
+					{ "time": 64.8333, "color": "ffffffff" },
+					{ "time": 65.0333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{},
+					{ "time": 59.6333, "name": "devil-hand" },
+					{ "time": 65.0333 }
+				]
+			},
+			"sign": {
+				"rgba": [
+					{ "time": 64.8333, "color": "ffffffff" },
+					{ "time": 65.0333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"devil": {
+				"translate": [
+					{
+						"x": 21.06,
+						"y": -370.57,
+						"curve": [ 0, 9.71, 0.444, 0, 0, -170.93, 0.444, 0 ]
+					},
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 93.6 }
+				]
+			},
+			"zebra": {
+				"translate": [
+					{ "x": 6.29, "y": -371.12, "curve": "stepped" },
+					{
+						"time": 0.6667,
+						"x": 6.29,
+						"y": -371.12,
+						"curve": [ 0.667, 2.9, 1.111, 0, 0.667, -171.18, 1.111, 0 ]
+					},
+					{ "time": 1.3333 }
+				]
+			},
+			"devil-hand": {
+				"translate": [
+					{ "time": 59.6333, "x": -24.47, "y": 6.12 },
+					{ "time": 60.0333, "x": 89.72, "y": 112.15, "curve": "stepped" },
+					{ "time": 61.0667, "x": 89.72, "y": 112.15 },
+					{ "time": 61.4667, "x": -24.47, "y": 6.12, "curve": "stepped" },
+					{ "time": 62.1333, "x": -24.47, "y": 6.12 },
+					{ "time": 62.5, "x": 8.16, "y": 108.07, "curve": "stepped" },
+					{ "time": 63.5333, "x": 8.16, "y": 108.07 },
+					{ "time": 63.9667, "x": 114.18, "curve": "stepped" },
+					{ "time": 64.8333, "x": 114.18 },
+					{ "time": 65.0333, "x": 58.45, "y": -33.98 }
+				]
+			},
+			"sign": {
+				"translate": [
+					{ "x": 4.75, "y": 494.44, "curve": "stepped" },
+					{
+						"time": 58.7333,
+						"x": 4.75,
+						"y": 494.44,
+						"curve": [ 58.876, 2.63, 59.311, 0.04, 58.876, 273.26, 59.311, 3.7 ]
+					},
+					{ "time": 59.6, "x": 0.04, "y": 3.7 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 1.3333, "name": "story" },
+			{ "time": 1.6333, "name": "text", "string": "Hah, you're finally dead!" },
+			{ "time": 3.8, "name": "text", "string": "Now your soul belongs to me zebra!" },
+			{ "time": 8.1, "name": "text", "string": "You and the rest of libGDX will be punished" },
+			{ "time": 10.9667, "name": "text", "string": "for the many misdeeds in your lives." },
+			{ "time": 14.2667, "name": "text", "string": "Centuries of pure torment!" },
+			{ "time": 17.4333, "name": "text", "string": "Hah hah hah!" },
+			{ "time": 19.0667, "name": "text", "string": "The trouble is that I don't have any evidence." },
+			{ "time": 23.3333, "name": "text", "string": "Let's make a deal." },
+			{ "time": 25.2333, "name": "text", "string": "For each crime:" },
+			{ "time": 26.9333, "name": "text", "string": "If you snitch on your friend," },
+			{ "time": 28.9667, "name": "text", "string": "your friend must serve 5 years of torment " },
+			{ "time": 32.5667, "name": "text", "string": "and you will serve none." },
+			{ "time": 34.9, "name": "text", "string": "If your friend snitches on you, " },
+			{ "time": 37.0667, "name": "text", "string": "you will serve 5 years " },
+			{ "time": 39.1667, "name": "text", "string": "and they will serve none." },
+			{ "time": 41.8667, "name": "text", "string": "If you both try to snitch on each other, " },
+			{ "time": 43.9667, "name": "text", "string": "I know you're lying and you both get 3 years." },
+			{ "time": 47.5667, "name": "text", "string": "If neither of you say anything," },
+			{ "time": 50.2667, "name": "text", "string": "I will be forced to punish both of you for 2 years." },
+			{ "time": 56.2, "name": "text", "string": "I've made a helpful chart so you can understand!" },
+			{ "time": 58.9667, "name": "text" },
+			{ "time": 65.0333, "name": "text", "string": "Now now. " },
+			{ "time": 66.3333, "name": "text", "string": "I'm not going to let you talk to your friends. " },
+			{ "time": 69.1667, "name": "text", "string": "No." },
+			{ "time": 70.1333, "name": "text", "string": "That would be cheating. " },
+			{ "time": 72.3, "name": "text", "string": "Complete isolation!" },
+			{ "time": 75, "name": "text", "string": "But you're a smart programmer. " },
+			{ "time": 77.2667, "name": "text", "string": "I’m sure you’ve already worked out an algorithm " },
+			{ "time": 80.5, "name": "text", "string": "to minimize your torment." },
+			{ "time": 82.9333, "name": "text", "string": "The trouble is, so have your friends. " },
+			{ "time": 86.6, "name": "text", "string": "Can you trust your friends? " },
+			{ "time": 89.1, "name": "text", "string": "Or will they rat you out?" },
+			{ "time": 91.6667, "name": "text", "string": "Whaddya say?" }
+		]
+	}
+}
+}
